@@ -83,3 +83,55 @@ var p = "global";
     var p = "block";
     showP();
 }
+
+
+////// classes //////////
+
+class DevonshireCream {
+    serveOn() {
+        return "Scones";
+    }
+}
+
+print DevonshireCream;
+
+class Bagel {}
+var bagel = Bagel();
+
+print bagel;
+
+class Bacon {
+    eat() {
+        print "crunch crunch crucnh!";
+    }
+}
+
+Bacon().eat();
+
+
+class Cake {
+    taste() {
+        var adjective = "delicious";
+        print "The " + this.flavor + " cake is " + adjective + "!";
+    }
+}
+
+var cake = Cake();
+cake.flavor = "German chocolate";
+cake.taste();
+
+class Bin {
+    test () {
+        print this;
+    }
+}
+
+Bin().test();
+
+class Fooo {
+    init() {
+        return;
+    }
+}
+
+print Fooo().init();
