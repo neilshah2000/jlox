@@ -135,3 +135,40 @@ class Fooo {
 }
 
 print Fooo().init();
+
+//////////// inheritance
+
+class PeddleBin < Bin {
+    peddleTest () {
+        print "peddletest";
+    }
+}
+
+PeddleBin().peddleTest();
+PeddleBin().test();
+
+
+class Doughnut {
+    cook() {
+        print "Fry until golden brown";
+    }
+}
+
+class BostonCream < Doughnut {
+    cook() {
+        super.cook();
+        print "Pipe full of custard and coat with chocolate";
+    }
+}
+
+BostonCream().cook();
+
+
+//class Eclair {
+//    cook() {
+//        super.cook();
+//        print "Pipe full of creme patissiere";
+//    }
+//}
+// Eclair().cook();
+// super.notEvenInAClass();
